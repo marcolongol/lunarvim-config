@@ -1,3 +1,6 @@
+-- treesitter
+reload('marcolongol.treesitter')
+
 -- options
 reload('marcolongol.vim-options')
 reload('marcolongol.lvim-options')
