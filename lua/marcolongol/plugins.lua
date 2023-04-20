@@ -72,6 +72,12 @@ lvim.plugins = {
         end,
     },
 
+    {
+        "fildo7525/pretty_hover",
+        event = "LspAttach",
+        opts = {}
+    },
+
 }
 
 table.insert(
