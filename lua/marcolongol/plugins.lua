@@ -78,6 +78,11 @@ lvim.plugins = {
         opts = {}
     },
 
+    -- json schemastore
+    {
+        "b0o/schemastore.nvim",
+    }
+
 }
 
 table.insert(
