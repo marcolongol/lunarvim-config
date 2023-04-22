@@ -81,6 +81,11 @@ lvim.plugins = {
     -- json schemastore
     {
         "b0o/schemastore.nvim",
+    },
+
+    -- vim-kubernetes
+    {
+        "andrewstuart/vim-kubernetes",
     }
 
 }
