@@ -47,3 +47,12 @@ lvim.keys.visual_mode["K"] = ":m '<-2<CR>gv=gv"
 -- Use which-key to add extra bindings with the leader-key prefix
 lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
+
+
+-- telescope zoxide bindings
+lvim.builtin.which_key.mappings["z"] = {
+    name = "Zoxide",
+    z = { "<cmd>lua require('telescope').extensions.zoxide.list{}<CR>", "List" },
+    a = { "<cmd>lua require('telescope').extensions.zoxide.list{cmd = 'zoxide add'}<CR>", "Add" },
+    r = { "<cmd>lua require('telescope').extensions.zoxide.list{cmd = 'zoxide remove'}<CR>", "Remove" },
+}

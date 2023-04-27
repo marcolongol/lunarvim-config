@@ -86,6 +86,11 @@ lvim.plugins = {
     -- vim-kubernetes
     {
         "andrewstuart/vim-kubernetes",
+    },
+
+    -- Telescope plugins
+    {
+        "jvgrootveld/telescope-zoxide",
     }
 
 }
@@ -101,3 +106,6 @@ table.insert(
         end,
     }
 )
+
+-- Telescope config
+lvim.builtin.telescope.on_config_done = require('marcolongol.config.telescope').setup
