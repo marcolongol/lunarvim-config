@@ -80,6 +80,10 @@ lvim.plugins = {
     -- Telescope plugins
     {
         "jvgrootveld/telescope-zoxide",
+    },
+
+    {
+        "wintermute-cell/gitignore.nvim"
     }
 
 }
