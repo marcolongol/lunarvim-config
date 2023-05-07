@@ -14,7 +14,7 @@ lvim.format_on_save = {
 -- lvim.use_icons = false
 
 -- -- Change theme settings
-lvim.colorscheme = "gruvbox-material"
+lvim.colorscheme = "moonlight"
 lvim.transparent_window = true
 
 lvim.builtin.alpha.active = true

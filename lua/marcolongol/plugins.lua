@@ -1,4 +1,4 @@
--- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
+-- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
 lvim.plugins = {
 
     -- Copilot
@@ -20,7 +20,11 @@ lvim.plugins = {
     { "lunarvim/horizon.nvim" },
     { "tomasr/molokai" },
     { "ayu-theme/ayu-vim" },
-
+    { "folke/tokyonight.nvim" },
+    { "folke/lsp-colors.nvim" },
+    { "marko-cerovac/material.nvim" },
+    { "shaunsingh/nord.nvim" },
+    { "shaunsingh/moonlight.nvim" },
 
     -- trouble
     {
