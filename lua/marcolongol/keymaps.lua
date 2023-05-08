@@ -49,10 +49,11 @@ lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without f
 lvim.builtin.which_key.mappings["P"] = { "<cmd>Telescope projects<CR>", "Projects" }
 
 
--- telescope zoxide bindings
+-- telescope bindings
+-- zoxide
 lvim.builtin.which_key.mappings["z"] = {
     name = "Zoxide",
-    z = { "<cmd>lua require('telescope').extensions.zoxide.list{}<CR>", "List" },
+    l = { "<cmd>lua require('telescope').extensions.zoxide.list{}<CR>", "zoxide list" },
     a = { "<cmd>lua require('telescope').extensions.zoxide.list{cmd = 'zoxide add'}<CR>", "Add" },
     r = { "<cmd>lua require('telescope').extensions.zoxide.list{cmd = 'zoxide remove'}<CR>", "Remove" },
 }
