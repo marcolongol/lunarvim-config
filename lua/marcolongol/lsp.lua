@@ -7,12 +7,12 @@ lvim.lsp.installer.setup.automatic_installation = true
 -- ---see the full default list `:lua =lvim.lsp.automatic_configuration.skipped_servers`
 vim.list_extend(lvim.lsp.automatic_configuration.skipped_servers, { "jsonls" })
 local opts = {
-    settings = {
-        json = {
-            schemas = require('schemastore').json.schemas(),
-            validate = { enable = true },
-        },
-    }
+	settings = {
+		json = {
+			schemas = require("schemastore").json.schemas(),
+			validate = { enable = true },
+		},
+	},
 } -- check the lspconfig documentation for a list of all possible options
 require("lvim.lsp.manager").setup("jsonls", opts)
 

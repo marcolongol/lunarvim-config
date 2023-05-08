@@ -1,21 +1,21 @@
 -- treesitter
-reload('marcolongol.treesitter')
+reload("marcolongol.treesitter")
 
 -- options
-reload('marcolongol.vim-options')
-reload('marcolongol.lvim-options')
+reload("marcolongol.vim-options")
+reload("marcolongol.lvim-options")
 
 -- plugins
-reload('marcolongol.plugins')
+reload("marcolongol.plugins")
 
 -- autocmds
-reload('marcolongol.autocmds')
+reload("marcolongol.autocmds")
 
 -- lsp
-reload('marcolongol.lsp')
+reload("marcolongol.lsp")
 
 -- keymaps
-reload('marcolongol.keymaps')
+reload("marcolongol.keymaps")
 
 -- dashboard
-reload('marcolongol.dashboard')
+reload("marcolongol.dashboard")
