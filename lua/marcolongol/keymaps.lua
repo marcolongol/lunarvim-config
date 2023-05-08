@@ -57,3 +57,9 @@ lvim.builtin.which_key.mappings["z"] = {
     a = { "<cmd>lua require('telescope').extensions.zoxide.list{cmd = 'zoxide add'}<CR>", "Add" },
     r = { "<cmd>lua require('telescope').extensions.zoxide.list{cmd = 'zoxide remove'}<CR>", "Remove" },
 }
+-- neoclip
+lvim.builtin.which_key.mappings["y"] = {
+    name = "Neoclip",
+    y = { "<cmd>lua require('telescope').extensions.neoclip.default()<CR>", "List" },
+    p = { "<cmd>lua require('telescope').extensions.neoclip.pasteboard()<CR>", "Pasteboard" },
+}

@@ -87,6 +87,13 @@ lvim.plugins = {
     },
 
     {
+        "AckslD/nvim-neoclip.lua",
+        config = function()
+            require('neoclip').setup()
+        end
+    },
+
+    {
         "wintermute-cell/gitignore.nvim"
     },
 
