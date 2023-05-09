@@ -92,13 +92,34 @@ lvim.plugins = {
 		end,
 	},
 
+	-- gitignore
 	{
 		"wintermute-cell/gitignore.nvim",
 	},
 
-	-- refactoring
 	{
 		"ThePrimeagen/refactoring.nvim",
+	},
+
+	-- rainbow csv
+	{
+		"cameron-wags/rainbow_csv.nvim",
+		config = true,
+		ft = {
+			"csv",
+			"tsv",
+			"csv_semicolon",
+			"csv_whitespace",
+			"csv_pipe",
+			"rfc_csv",
+			"rfc_semicolon",
+		},
+		cmd = {
+			"RainbowDelim",
+			"RainbowDelimSimple",
+			"RainbowDelimQuoted",
+			"RainbowMultiDelim",
+		},
 	},
 }
 
