@@ -121,6 +121,9 @@ lvim.plugins = {
 			"RainbowMultiDelim",
 		},
 	},
+
+	-- nvim-notify
+	{ "rcarriga/nvim-notify" },
 }
 
 table.insert(lvim.plugins, {
