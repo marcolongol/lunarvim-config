@@ -1,9 +1,14 @@
 -- filetye mappings
 
--- add Tiltfile (starlark) support
+-- Tiltfile
 vim.filetype.add({
+	extension = {
+		tiltfile = "Tiltfile",
+	},
 	filename = {
-		["Tiltfile"] = "starlark",
-		["tiltfile"] = "starlark",
+		["Tiltfile"] = "Tiltfile",
+	},
+	pattern = {
+		[".*Tiltfile"] = "Tiltfile",
 	},
 })
