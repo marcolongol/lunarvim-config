@@ -1,12 +1,3 @@
--- Tiltfile code actions
-local code_actions = require("lvim.lsp.null-ls.code_actions")
-code_actions.setup({
-	{
-		name = "refactoring",
-		filetypes = { "Tiltfile" },
-	},
-})
-
 -- Tiltfile formatters
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({

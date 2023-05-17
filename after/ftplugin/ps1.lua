@@ -20,17 +20,6 @@ local cmd = {
 	"-Stdio",
 }
 
--- notify(bundle_path, "info")
--- notify(cmd, "info")
-
--- ps1 code actions
-local code_actions = require("lvim.lsp.null-ls.code_actions")
-code_actions.setup({
-	{
-		name = "refactoring",
-	},
-})
-
 -- ps1 formatters
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({})

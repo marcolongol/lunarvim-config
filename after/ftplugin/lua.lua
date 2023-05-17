@@ -1,11 +1,3 @@
--- lua code actions
-local code_actions = require("lvim.lsp.null-ls.code_actions")
-code_actions.setup({
-	{
-		name = "refactoring",
-	},
-})
-
 -- lua formatters
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({

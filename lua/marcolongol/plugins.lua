@@ -97,6 +97,7 @@ lvim.plugins = {
 		"wintermute-cell/gitignore.nvim",
 	},
 
+	-- refactoring
 	{
 		"ThePrimeagen/refactoring.nvim",
 	},
