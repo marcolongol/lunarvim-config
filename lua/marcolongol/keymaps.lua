@@ -62,3 +62,10 @@ lvim.builtin.which_key.mappings["y"] = {
 	y = { "<cmd>lua require('telescope').extensions.neoclip.default()<CR>", "List" },
 	p = { "<cmd>lua require('telescope').extensions.neoclip.pasteboard()<CR>", "Pasteboard" },
 }
+
+-- color-picker (color-picker.nvim)
+lvim.builtin.which_key.mappings["C"] = {
+	name = "Color Picker",
+	c = { "<cmd>PickColor<CR>", "Pick Color" },
+	i = { "<cmd>PickColorInsert<CR>", "Pick Color Insert" },
+}

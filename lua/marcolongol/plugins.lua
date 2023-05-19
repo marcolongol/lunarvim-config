@@ -125,6 +125,22 @@ lvim.plugins = {
 
 	-- nvim-notify
 	{ "rcarriga/nvim-notify" },
+
+	-- color-picker
+	{
+		"ziontee113/color-picker.nvim",
+		config = function()
+			require("marcolongol.config.color-picker").setup()
+		end,
+	},
+
+	-- colorizer
+	{
+		"norcalli/nvim-colorizer.lua",
+		config = function()
+			require("colorizer").setup()
+		end,
+	},
 }
 
 table.insert(lvim.plugins, {
