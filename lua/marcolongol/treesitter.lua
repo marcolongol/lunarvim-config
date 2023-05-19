@@ -1,4 +1,7 @@
--- Filetye mappings
+-- Imports
+local ts_configs = require("nvim-treesitter.configs")
+local ts_parsers = require("nvim-treesitter.parsers")
+local ts_install = require("nvim-treesitter.install")
 
 -- Tiltfile
 vim.filetype.add({
@@ -13,7 +16,10 @@ vim.filetype.add({
 	},
 })
 
--- Parsers
+-- Compilers
+ts_install.compilers = { "zig", "clang", "gcc" }
+
+-- Custom parsers
 local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 parser_config.powershell = {
 	install_info = {
