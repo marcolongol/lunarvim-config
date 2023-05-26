@@ -1,0 +1,9 @@
+{
+  "eslint.codeActionsOnSave.mode": "all",
+  "eslint.run": "onSave",
+  "eslint.format.enable": true,
+  "eslint.codeAction.showDocumentation": {
+    "enable": true
+  },
+  "eslint.lintTask.enable": true
+}
