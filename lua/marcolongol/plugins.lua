@@ -146,6 +146,12 @@ lvim.plugins = {
     {
         "editorconfig/editorconfig-vim",
     },
+
+    -- hardtime
+    -- {
+    --     "m4xshen/hardtime.nvim",
+    --     opts = {},
+    -- },
 }
 
 table.insert(lvim.plugins, {
