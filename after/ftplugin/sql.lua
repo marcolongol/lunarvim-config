@@ -1,22 +1,22 @@
 -- sql formatters
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
-	{
-		name = "sql_formatter",
-	},
+  {
+    name = "sql_formatter",
+  },
 })
 
 -- sql linting
 local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
-	{
-		name = "sqlfluff",
-		args = { "--dialect", "postgres", "--exclude-rules", "LT02,LT09" },
-	},
+  {
+    name = "sqlfluff",
+    args = { "--dialect", "postgres", "--exclude-rules", "LT02,LT09" },
+  },
 })
 
 -- lsp
 local opts = {
-	filetypes = { "sql" },
+  filetypes = { "sql" },
 }
 require("lvim.lsp.manager").setup("sqlls", opts)

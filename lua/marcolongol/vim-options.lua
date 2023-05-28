@@ -10,28 +10,28 @@
 
 -- Set a compatible clipboard manager
 vim.g.clipboard = {
-	copy = {
-		["+"] = "win32yank.exe -i --crlf",
-		["*"] = "win32yank.exe -i --crlf",
-	},
-	paste = {
-		["+"] = "win32yank.exe -o --lf",
-		["*"] = "win32yank.exe -o --lf",
-	},
+  copy = {
+    ["+"] = "win32yank.exe -i --crlf",
+    ["*"] = "win32yank.exe -i --crlf",
+  },
+  paste = {
+    ["+"] = "win32yank.exe -o --lf",
+    ["*"] = "win32yank.exe -o --lf",
+  },
 }
 
 -- vim options
 vim.opt.guicursor = {
-	"n-v-c:block",
-	"i-c-ci-ve:ver25",
-	"r-cr:hor20",
-	"o:hor50",
-	"i:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
-	"sm:block-blinkwait175-blinkoff150-blinkon175",
+  "n-v-c:block",
+  "i-c-ci-ve:ver25",
+  "r-cr:hor20",
+  "o:hor50",
+  "i:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor",
+  "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
 
 -- font options
-vim.opt.guifont = "CaskaydiaCove NF:h10"
+vim.opt.guifont = "JetBrainsMono Nerd Font:h13"
 
 -- line numbers
 vim.opt.nu = true
@@ -58,13 +58,13 @@ vim.opt.updatetime = 4000
 vim.opt.colorcolumn = "88"
 vim.opt.incsearch = true
 vim.opt.listchars = {
-	tab = "» ",
-	trail = "·",
-	extends = "»",
-	precedes = "«",
-	nbsp = "␣",
-	space = "⋅",
-	eol = "↴",
+  tab = "» ",
+  trail = "·",
+  extends = "»",
+  precedes = "«",
+  nbsp = "␣",
+  space = "⋅",
+  eol = "↴",
 }
 vim.opt.list = true
 vim.opt.autoread = true

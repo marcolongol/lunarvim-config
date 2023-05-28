@@ -4,20 +4,20 @@ local bundle_path = vim.fn.stdpath("data") .. "\\mason\\packages\\powershell-edi
 local command_path = bundle_path .. "\\PowerShellEditorServices\\Start-EditorServices.ps1"
 local session_path = bundle_path .. "\\PowerShellEditorServices\\SessionDetails.json"
 local cmd = {
-	"pwsh",
-	"-NoLogo",
-	"-NoProfile",
-	"-Command",
-	command_path,
-	"-Hostname",
-	"nvim",
-	"-HostProfileId",
-	"0",
-	"-HostVersion",
-	"1.0.0",
-	"-SessionDetailsPath",
-	session_path,
-	"-Stdio",
+  "pwsh",
+  "-NoLogo",
+  "-NoProfile",
+  "-Command",
+  command_path,
+  "-Hostname",
+  "nvim",
+  "-HostProfileId",
+  "0",
+  "-HostVersion",
+  "1.0.0",
+  "-SessionDetailsPath",
+  session_path,
+  "-Stdio",
 }
 
 -- ps1 formatters
@@ -30,5 +30,5 @@ linters.setup({})
 
 -- lsp
 require("lspconfig").powershell_es.setup({
-	cmd = cmd,
+  cmd = cmd,
 })

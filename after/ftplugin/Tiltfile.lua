@@ -1,39 +1,39 @@
 -- Tiltfile formatters
 local formatters = require("lvim.lsp.null-ls.formatters")
 formatters.setup({
-	{
-		name = "black",
-		filetypes = { "Tiltfile" },
-	},
-	{
-		name = "isort",
-		filetypes = { "Tiltfile" },
-	},
+  {
+    name = "black",
+    filetypes = { "Tiltfile" },
+  },
+  {
+    name = "isort",
+    filetypes = { "Tiltfile" },
+  },
 })
 
 -- Tiltfile linting
 local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
-	{
-		name = "flake8",
-		filetypes = { "Tiltfile" },
-	},
-	{
-		name = "mypy",
-		filetypes = { "Tiltfile" },
-	},
-	{
-		name = "pylint",
-		filetypes = { "Tiltfile" },
-	},
-	{
-		name = "ruff",
-		filetypes = { "Tiltfile" },
-	},
+  {
+    name = "flake8",
+    filetypes = { "Tiltfile" },
+  },
+  {
+    name = "mypy",
+    filetypes = { "Tiltfile" },
+  },
+  {
+    name = "pylint",
+    filetypes = { "Tiltfile" },
+  },
+  {
+    name = "ruff",
+    filetypes = { "Tiltfile" },
+  },
 })
 
 -- Setup lsp for Tiltfile
 local opts = {
-	filetypes = { "Tiltfile" },
+  filetypes = { "Tiltfile" },
 }
 require("lvim.lsp.manager").setup("pyright", opts)

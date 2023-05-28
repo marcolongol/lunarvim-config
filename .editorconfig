@@ -52,6 +52,9 @@ indent_size = 2
 [*.cmd]
 indent_size = 2
 
+[*.lua]
+indent_size = 2
+
 [*.md]
 trim_trailing_whitespace = false
 max_line_length = 0
