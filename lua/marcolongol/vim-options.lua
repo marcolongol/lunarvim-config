@@ -48,7 +48,7 @@ vim.opt.incsearch = true
 -- general options
 vim.opt.smartindent = true
 vim.opt.wrap = false
-vim.opt.mouse = ""
+vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"
 vim.opt.hidden = true
 vim.opt.ignorecase = true

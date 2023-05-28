@@ -19,3 +19,8 @@ reload("marcolongol.keymaps")
 
 -- dashboard
 reload("marcolongol.dashboard")
+
+-- if running in neovide, load neovide settings
+if vim.g.neovide then
+  reload("marcolongol.neovide")
+end
