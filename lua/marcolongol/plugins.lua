@@ -12,19 +12,6 @@ lvim.plugins = {
     end,
   },
 
-  -- colorschemes
-  { "lunarvim/lunar.nvim" },
-  { "morhetz/gruvbox" },
-  { "sainnhe/gruvbox-material" },
-  { "sainnhe/edge" },
-  { "lunarvim/horizon.nvim" },
-  { "tomasr/molokai" },
-  { "ayu-theme/ayu-vim" },
-  { "folke/tokyonight.nvim" },
-  { "folke/lsp-colors.nvim" },
-  { "marko-cerovac/material.nvim" },
-  { "shaunsingh/nord.nvim" },
-  { "shaunsingh/moonlight.nvim" },
 
   -- trouble
   {
@@ -149,6 +136,14 @@ lvim.plugins = {
     "wakatime/vim-wakatime",
   },
 }
+
+local colorschemes = require("marcolongol.colorschemes")
+
+for _, colorscheme in ipairs(colorschemes) do
+  table.insert(lvim.plugins, colorscheme)
+end
+
+table.insert(lvim.plugins, {})
 
 table.insert(lvim.plugins, {
   "zbirenbaum/copilot-cmp",
