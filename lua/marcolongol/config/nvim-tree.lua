@@ -90,7 +90,7 @@ M.setup = function()
           default = "",
           symlink = "",
           bookmark = "",
-          modified = "",
+          modified = "\u{eade}",
           folder = {
             arrow_closed = "",
             arrow_open = "",
@@ -138,10 +138,10 @@ M.setup = function()
         max = vim.diagnostic.severity.ERROR,
       },
       icons = {
-        hint = "",
-        info = "",
-        warning = "",
-        error = "",
+        hint = "\u{ea61}",
+        info = "\u{ea74}",
+        warning = "\u{f071}",
+        error = "\u{ea87}",
       },
     },
     filters = {

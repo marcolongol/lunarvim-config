@@ -7,7 +7,6 @@ formatters.setup({
   },
   {
     name = "isort",
-    args = { "--max-line-length", "87" },
   },
 })
 

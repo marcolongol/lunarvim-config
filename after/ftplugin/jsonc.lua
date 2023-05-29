@@ -5,7 +5,7 @@ formatters.setup({
     name = "prettier",
   },
 })
---lsp
+-- lsp
 local opts = {
   settings = {
     json = {

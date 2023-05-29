@@ -35,7 +35,7 @@ vim.opt.cursorlineopt = "both"
 vim.opt.cursorcolumn = false
 
 -- font options
-vim.opt.guifont = "JetBrainsMono Nerd Font:h11"
+vim.opt.guifont = "JetBrainsMono Nerd Font:h10"
 
 -- line numbers
 vim.opt.nu = true
@@ -58,7 +58,7 @@ vim.opt.hidden = true
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.splitbelow = true
-vim.opt.updatetime = 4000
+vim.opt.updatetime = 100
 vim.opt.colorcolumn = "88"
 vim.opt.incsearch = true
 vim.opt.listchars = {
@@ -72,3 +72,18 @@ vim.opt.listchars = {
 }
 vim.opt.list = true
 vim.opt.autoread = true
+
+-- Filetypes
+
+-- Tiltfile
+vim.filetype.add({
+  extension = {
+    tiltfile = "Tiltfile",
+  },
+  filename = {
+    ["Tiltfile"] = "Tiltfile",
+  },
+  pattern = {
+    [".*Tiltfile"] = "Tiltfile",
+  },
+})

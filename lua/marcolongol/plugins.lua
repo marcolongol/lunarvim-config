@@ -12,7 +12,6 @@ lvim.plugins = {
     end,
   },
 
-
   -- trouble
   {
     "folke/trouble.nvim",
@@ -22,6 +21,7 @@ lvim.plugins = {
   -- todo-comments
   {
     "folke/todo-comments.nvim",
+    dependencies = "nvim-lua/plenary.nvim",
     event = "BufRead",
     config = function()
       require("todo-comments").setup()

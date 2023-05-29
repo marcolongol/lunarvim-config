@@ -3,18 +3,33 @@ local ts_configs = require("nvim-treesitter.configs")
 local ts_parsers = require("nvim-treesitter.parsers")
 local ts_install = require("nvim-treesitter.install")
 
--- Tiltfile
-vim.filetype.add({
-  extension = {
-    tiltfile = "Tiltfile",
-  },
-  filename = {
-    ["Tiltfile"] = "Tiltfile",
-  },
-  pattern = {
-    [".*Tiltfile"] = "Tiltfile",
-  },
-})
+-- ensure parsers
+local ensure = {
+  "bash",
+  "c",
+  "cpp",
+  "css",
+  "dockerfile",
+  "go",
+  "gomod",
+  "html",
+  "javascript",
+  "json",
+  "jsonc",
+  "lua",
+  "python",
+  "regex",
+  "rust",
+  "toml",
+  "tsx",
+  "typescript",
+  "yaml",
+  "zig",
+}
+
+for _, lang in pairs(ensure) do
+  ts_install.ensure_installed(lang)
+end
 
 -- Compilers
 ts_install.compilers = { "zig", "clang", "gcc" }

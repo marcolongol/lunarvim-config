@@ -21,3 +21,5 @@ code_actions.setup({
     name = "eslint",
   },
 })
+
+require("lvim.lsp.manager").setup("angularls")
