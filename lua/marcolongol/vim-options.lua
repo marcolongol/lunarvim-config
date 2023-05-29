@@ -30,8 +30,12 @@ vim.opt.guicursor = {
   "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
 
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "both"
+vim.opt.cursorcolumn = false
+
 -- font options
-vim.opt.guifont = "JetBrainsMono Nerd Font:h13"
+vim.opt.guifont = "JetBrainsMono Nerd Font:h11"
 
 -- line numbers
 vim.opt.nu = true

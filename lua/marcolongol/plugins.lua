@@ -159,3 +159,6 @@ table.insert(lvim.plugins, {
 
 -- Telescope config
 lvim.builtin.telescope.on_config_done = require("marcolongol.config.telescope").setup
+
+-- nvim-tree
+lvim.builtin.nvimtree.on_config_done = require("marcolongol.config.nvim-tree").setup
