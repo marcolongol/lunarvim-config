@@ -143,6 +143,11 @@ lvim.plugins = {
   --     "m4xshen/hardtime.nvim",
   --     opts = {},
   -- },
+
+  -- wakatime
+  {
+    "wakatime/vim-wakatime",
+  },
 }
 
 table.insert(lvim.plugins, {
