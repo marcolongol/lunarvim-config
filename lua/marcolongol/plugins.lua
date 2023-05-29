@@ -152,6 +152,14 @@ lvim.plugins = {
   {
     "wakatime/vim-wakatime",
   },
+
+  -- lsp_signature
+  {
+    "ray-x/lsp_signature.nvim",
+    config = function()
+      require("lsp_signature").setup()
+    end,
+  },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
