@@ -17,6 +17,7 @@ local opts = {
   },
 }
 require("lvim.lsp.manager").setup("emmet_ls", opts)
+require("lvim.lsp.manager").setup("angularls")
 
 -- linters
 local linters = require("lvim.lsp.null-ls.linters")
