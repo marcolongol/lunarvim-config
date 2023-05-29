@@ -102,7 +102,24 @@ lvim.plugins = {
   },
 
   -- nvim-notify
-  { "rcarriga/nvim-notify" },
+  {
+    "rcarriga/nvim-notify",
+    config = function()
+      require("notify").setup({
+        stages = "fade_in_slide_out",
+        timeout = 5000,
+        background_colour = "#282c34",
+        icons = {
+          ERROR = "",
+          WARN = "",
+          INFO = "",
+          DEBUG = "",
+          TRACE = "✎",
+        },
+      })
+      vim.notify = require("notify")
+    end,
+  },
 
   -- color-picker
   {
