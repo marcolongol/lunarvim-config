@@ -1,7 +1,7 @@
 -- colorschemes configs
 local config = require("marcolongol.config.colorschemes")
 
-SELECTED_COLORSHEME = "moonlight"
+local SELECTED_COLORSHEME = "moonlight"
 
 local colorschemes_dict = {
   { "lunarvim/lunar.nvim", config = config.lunar },
