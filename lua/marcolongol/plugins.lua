@@ -160,6 +160,13 @@ lvim.plugins = {
       require("lsp_signature").setup()
     end,
   },
+  -- blamer
+  {
+    "APZelos/blamer.nvim",
+    config = function()
+      vim.g.blamer_enabled = true
+    end,
+  },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
