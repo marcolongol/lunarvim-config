@@ -197,3 +197,6 @@ lvim.builtin.telescope.on_config_done = require("marcolongol.config.telescope").
 
 -- nvim-tree
 lvim.builtin.nvimtree.on_config_done = require("marcolongol.config.nvim-tree").setup
+
+-- lazygit
+lvim.builtin.lazygit.on_config_done = require("marcolongol.config.lazygit").setup
