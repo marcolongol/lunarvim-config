@@ -160,6 +160,16 @@ lvim.plugins = {
       require("lsp_signature").setup()
     end,
   },
+
+  -- package-info
+  {
+    "vuki656/package-info.nvim",
+    dependencies = "MunifTanjim/nui.nvim",
+    config = function()
+      require("marcolongol.config.package-info").setup()
+    end,
+  },
+
   -- blamer
   {
     "APZelos/blamer.nvim",

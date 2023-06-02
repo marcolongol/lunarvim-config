@@ -80,3 +80,19 @@ lvim.builtin.which_key.mappings["t"] = {
   f = { "<cmd>Trouble lsp_definitions<cr>", "Definitions" },
   w = { "<cmd>Trouble workspace_diagnostics<cr>", "Workspace Diagnostics" },
 }
+
+-- package-info
+lvim.builtin.which_key.mappings["n"] = {
+  name = "Package Info",
+  s = {
+    "<cmd>lua require('package-info').show({force=true})<cr>",
+    "Show Package Info",
+  },
+  d = { "<cmd>lua require('package-info').delete()<cr>", "Delete Package" },
+  c = { "<cmd>lua require('package-info').change_version()<cr>", "Change Package Version" },
+  i = { "<cmd>lua require('package-info').install()<cr>", "Install New Package" },
+}
+
+-- append lvim git mappings
+local lvim_git_maps = lvim.builtin.which_key.mappings["g"]
+lvim_git_maps.f = { "<cmd>Flog<cr>", "Flog" }
