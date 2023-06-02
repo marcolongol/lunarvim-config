@@ -22,7 +22,7 @@ vim.g.clipboard = {
 
 -- vim options
 vim.opt.guicursor = {
-  "n-v-c:block",
+  "n-v-c:block-Cursor",
   "i-c-ci-ve:ver25",
   "r-cr:hor20",
   "o:hor50",
@@ -30,16 +30,18 @@ vim.opt.guicursor = {
   "sm:block-blinkwait175-blinkoff150-blinkon175",
 }
 
+-- cursor
 vim.opt.cursorline = true
 vim.opt.cursorlineopt = "both"
 vim.opt.cursorcolumn = false
+vim.opt.termguicolors = true
 
 -- font options
-vim.opt.guifont = "JetBrainsMono Nerd Font:h10"
+vim.opt.guifont = "JetBrainsMono Nerd Font:h09"
 
 -- line numbers
 vim.opt.nu = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 
 -- tab options
 vim.opt.tabstop = 4
