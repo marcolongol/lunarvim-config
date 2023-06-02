@@ -167,6 +167,9 @@ lvim.plugins = {
       vim.g.blamer_enabled = true
     end,
   },
+
+  -- vim-better-comments
+  { "jbgutierrez/vim-better-comments" },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
