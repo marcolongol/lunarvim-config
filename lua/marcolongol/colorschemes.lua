@@ -1,11 +1,12 @@
 -- colorschemes configs
 local config = require("marcolongol.config.colorschemes")
 
-local SELECTED_COLORSHEME = "moonlight"
+local SELECTED_COLORSHEME = "oxocarbon"
 
 local colorschemes_dict = {
   { "lunarvim/lunar.nvim", config = config.lunar },
   { "shaunsingh/moonlight.nvim", config = config.moonlight },
+  { "nyoom-engineering/oxocarbon.nvim" },
   { "morhetz/gruvbox", {} },
   { "sainnhe/gruvbox-material", {} },
   { "sainnhe/edge", {} },
