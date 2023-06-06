@@ -42,6 +42,7 @@ lvim.plugins = {
     end,
   },
 
+  -- pretty hover
   {
     "fildo7525/pretty_hover",
     event = "LspAttach",
@@ -178,8 +179,6 @@ lvim.plugins = {
     end,
   },
 
-  -- vim-better-comments
-  { "jbgutierrez/vim-better-comments" },
 
   -- diffview
   {
@@ -193,8 +192,11 @@ lvim.plugins = {
   {
     "akinsho/git-conflict.nvim",
     version = "*",
-    config = true,
+    config = function()
+      require("git-conflict").setup()
+    end,
   },
+
 }
 
 local colorschemes = require("marcolongol.colorschemes")
@@ -202,8 +204,6 @@ local colorschemes = require("marcolongol.colorschemes")
 for _, colorscheme in ipairs(colorschemes) do
   table.insert(lvim.plugins, colorscheme)
 end
-
-table.insert(lvim.plugins, {})
 
 table.insert(lvim.plugins, {
   "zbirenbaum/copilot-cmp",
@@ -222,6 +222,3 @@ lvim.builtin.telescope.on_config_done = require("marcolongol.config.telescope").
 
 -- nvim-tree
 lvim.builtin.nvimtree.on_config_done = require("marcolongol.config.nvim-tree").setup
-
--- lazygit
-lvim.builtin.lazygit.on_config_done = require("marcolongol.config.lazygit").setup

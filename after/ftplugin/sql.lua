@@ -11,7 +11,7 @@ local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({
   {
     name = "sqlfluff",
-    args = { "--dialect", "postgres", "--exclude-rules", "LT02,LT09" },
+    args = { "--dialect", "postgres", "--exclude-rules", "LT02,LT09,LT01,LT06,LT12,CP03" },
   },
 })
 

@@ -36,4 +36,5 @@ linters.setup({
 local opts = {
   filetypes = { "Tiltfile" },
 }
-require("lvim.lsp.manager").setup("pyright", opts)
+
+require("lvim.lsp.manager").setup("pyright", opts) -- HACK: pyright as proxy

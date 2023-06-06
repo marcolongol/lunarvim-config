@@ -5,6 +5,15 @@ formatters.setup({
     name = "prettier",
   },
 })
+
+-- linters
+local linters = require("lvim.lsp.null-ls.linters")
+linters.setup({
+  {
+    name = "jsonlint",
+  },
+})
+
 --lsp
 local opts = {
   settings = {

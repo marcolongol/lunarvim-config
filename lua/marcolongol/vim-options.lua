@@ -1,3 +1,4 @@
+-- SECTION: Powershell config
 -- Enable powershell as your default shell
 -- vim.opt.shell = "pwsh.exe -NoLogo"
 -- vim.opt.shellcmdflag =
@@ -74,6 +75,11 @@ vim.opt.listchars = {
 }
 vim.opt.list = true
 vim.opt.autoread = true
+
+vim.diagnostic.config({
+  virtual_text = false,
+  virtual_lines = { only_current_line = true },
+})
 
 -- Filetypes
 
