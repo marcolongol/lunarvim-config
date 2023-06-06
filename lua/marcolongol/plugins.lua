@@ -180,6 +180,21 @@ lvim.plugins = {
 
   -- vim-better-comments
   { "jbgutierrez/vim-better-comments" },
+
+  -- diffview
+  {
+    "sindrets/diffview.nvim",
+    config = function()
+      require("marcolongol.config.diffview").setup()
+    end,
+  },
+
+  -- git-conflict
+  {
+    "akinsho/git-conflict.nvim",
+    version = "*",
+    config = true,
+  },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
