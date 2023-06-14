@@ -212,6 +212,11 @@ lvim.plugins = {
     end,
   },
 
+  -- cmp-under-comparator
+  {
+    "lukas-reineke/cmp-under-comparator",
+  },
+
 }
 
 local colorschemes = require("marcolongol.colorschemes")
