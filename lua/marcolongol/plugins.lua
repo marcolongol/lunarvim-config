@@ -179,7 +179,6 @@ lvim.plugins = {
     end,
   },
 
-
   -- diffview
   {
     "sindrets/diffview.nvim",
@@ -202,6 +201,14 @@ lvim.plugins = {
     url = "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
     config = function()
       require("lsp_lines").setup()
+    end,
+  },
+
+  -- lsp-colors
+  {
+    "folke/lsp-colors.nvim",
+    config = function()
+      require("lsp-colors").setup()
     end,
   },
 
