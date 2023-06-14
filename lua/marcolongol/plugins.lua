@@ -217,6 +217,14 @@ lvim.plugins = {
     "lukas-reineke/cmp-under-comparator",
   },
 
+  -- nvim-scrollbar
+  {
+    "petertriho/nvim-scrollbar",
+    config = function()
+      require("scrollbar").setup()
+    end,
+  },
+
 }
 
 local colorschemes = require("marcolongol.colorschemes")
