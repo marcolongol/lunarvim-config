@@ -1,34 +1,58 @@
 local notify = require("notify")
-
 local bundle_path = vim.fn.stdpath("data") .. "\\mason\\packages\\powershell-editor-services"
-local command_path = bundle_path .. "\\PowerShellEditorServices\\Start-EditorServices.ps1"
-local session_path = bundle_path .. "\\PowerShellEditorServices\\SessionDetails.json"
 local cmd = {
   "pwsh",
   "-NoLogo",
   "-NoProfile",
   "-Command",
-  command_path,
-  "-Hostname",
+  bundle_path .. "\\PowerShellEditorServices\\Start-EditorServices.ps1",
+  "-BundledModulesPath",
+  bundle_path,
+  "-LogPath",
+  vim.fn.stdpath("cache") .. "\\lsp.log",
+  "-LogLevel",
+  "Verbose",
+  "-SessionDetailsPath",
+  vim.fn.stdpath("cache") .. "\\lsp.session.json",
+  "-FeatureFlags",
+  "@()",
+  "-AdditionalModules",
+  "@()",
+  "-HostName",
   "nvim",
   "-HostProfileId",
-  "0",
+  "nvim",
   "-HostVersion",
-  "1.0.0",
-  "-SessionDetailsPath",
-  session_path,
+  "0.0.1",
   "-Stdio",
 }
+notify(cmd)
 
 -- ps1 formatters
 local formatters = require("lvim.lsp.null-ls.formatters")
-formatters.setup({})
+formatters.setup({
+  {
+    name = "prettier",
+  },
+})
 
 -- ps1 linting
 local linters = require("lvim.lsp.null-ls.linters")
 linters.setup({})
 
 -- lsp
-require("lspconfig").powershell_es.setup({
+local opts = {
+  filetypes = { "ps1" },
+  root_dir = require("lspconfig/util").root_pattern(".git", vim.fn.getcwd()),
+  bundle_path = bundle_path,
   cmd = cmd,
-})
+  settings = {
+    powershell = {
+      scriptAnalysis = true,
+      enableProfileLoading = false,
+    },
+  },
+}
+
+require("lvim.lsp.manager").setup("powershell_es", opts)
+require("lspconfig").powershell_es.setup(opts)
