@@ -225,6 +225,14 @@ lvim.plugins = {
     end,
   },
 
+  -- lsp saga
+  {
+    "glepnir/lspsaga.nvim",
+    event = "LspAttach",
+    config = function()
+      require("lspsaga").setup()
+    end,
+  },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
