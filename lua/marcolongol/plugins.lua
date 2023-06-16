@@ -234,6 +234,14 @@ lvim.plugins = {
     end,
   },
 
+  -- lspkind
+  {
+    "onsails/lspkind-nvim",
+    event = "BufRead",
+    config = function()
+      require("lspkind").init()
+    end,
+  },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
