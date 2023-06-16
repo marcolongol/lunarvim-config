@@ -24,7 +24,7 @@ lvim.plugins = {
     dependencies = "nvim-lua/plenary.nvim",
     event = "BufRead",
     config = function()
-      require("todo-comments").setup()
+      require("marcolongol.config.todo-comments").setup()
     end,
   },
 
@@ -233,6 +233,7 @@ lvim.plugins = {
       require("lspsaga").setup()
     end,
   },
+
 }
 
 local colorschemes = require("marcolongol.colorschemes")

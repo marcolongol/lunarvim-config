@@ -107,17 +107,6 @@ M.symbols_outline = {
   TypeParameter = "𝙏",
 }
 
-M.todo_comments = {
-  FIX = "律",
-  TODO = " ",
-  HACK = " ",
-  WARN = "裂",
-  PERF = "龍",
-  NOTE = " ",
-  ERROR = " ",
-  REFS = "",
-}
-
 M.numbers = {
   " ",
   " ",
