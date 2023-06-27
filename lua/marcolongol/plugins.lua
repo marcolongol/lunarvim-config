@@ -242,6 +242,11 @@ lvim.plugins = {
       require("lspkind").init()
     end,
   },
+
+  -- vim-helm
+  {
+    "towolf/vim-helm",
+  },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
