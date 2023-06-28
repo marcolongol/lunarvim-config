@@ -247,6 +247,14 @@ lvim.plugins = {
   {
     "towolf/vim-helm",
   },
+
+  -- toggle-bool
+  {
+    "gerazov/toggle-bool.nvim",
+    config = function()
+      require("marcolongol.config.toggle-bool").setup()
+    end,
+  },
 }
 
 local colorschemes = require("marcolongol.colorschemes")
