@@ -40,6 +40,8 @@ lvim.lsp.buffer_mappings.normal_mode["gf"] = {
   ":Telescope frecency<CR>",
 }
 
+lvim.keys.normal_mode["<leader>to"] = ":BufferLineCloseOthers<CR>"
+
 -- move selection
 lvim.keys.visual_mode["J"] = ":m '>+1<CR>gv=gv"
 lvim.keys.visual_mode["K"] = ":m '<-2<CR>gv=gv"
