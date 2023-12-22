@@ -17,7 +17,6 @@ M.setup = function()
     reload_on_bufenter = true,
     respect_buf_cwd = true,
     on_attach = "default",
-    remove_keymaps = false,
     select_prompts = false,
     view = {
       centralize_selection = false,
@@ -28,18 +27,11 @@ M.setup = function()
         max = 60,
         padding = 2,
       },
-      hide_root_folder = false,
       side = "left",
       preserve_window_proportions = false,
       number = false,
       relativenumber = false,
       signcolumn = "yes",
-      mappings = {
-        custom_only = false,
-        list = {
-          -- user mappings go here
-        },
-      },
       float = {
         enable = false,
         quit_on_focus_loss = true,

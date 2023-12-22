@@ -172,12 +172,13 @@ lvim.plugins = {
   },
 
   -- blamer
-  {
-    "APZelos/blamer.nvim",
-    config = function()
-      vim.g.blamer_enabled = true
-    end,
-  },
+  -- ! WARN: not working (12/22/2023)
+  -- {
+  --   "APZelos/blamer.nvim",
+  --   config = function()
+  --     vim.g.blamer_enabled = true
+  --   end,
+  -- },
 
   -- diffview
   {
